@@ -9,5 +9,8 @@
         <module name="spring-image-uploader" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="front-end" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
