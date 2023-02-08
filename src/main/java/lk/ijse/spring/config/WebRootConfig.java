@@ -1,6 +1,9 @@
 package lk.ijse.spring.config;
 
+import lk.ijse.spring.service.ImageDataService;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * author  Yasith C Bandara
@@ -9,5 +12,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
+@Import({JPAConfig.class})
+@ComponentScan(basePackageClasses = {ImageDataService.class})
 public class WebRootConfig {
 }
